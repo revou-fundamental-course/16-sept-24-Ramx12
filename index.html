@@ -20,6 +20,7 @@
         </nav>
 
     </header>
+    
     <hr />
 
     <main>
@@ -32,9 +33,12 @@
 
             <article>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, possimus!</p>
-
+            <div class="photo-container">
                 <!-- photo-->
                  <div class="photo"></div>
+                 <div class="photo"></div>
+                 <div class="photo"></div>
+            </div>
             </article>
         
         </section>
@@ -45,7 +49,7 @@
         <section id="section-our-profile">
             
             <header>
-                <h1>Our Profile</h1>
+                <h1>Our Headquarters</h1>
             </header>
             
             <div class="profile-container">
@@ -57,6 +61,11 @@
                 <div>
                     <div class="profile-icon"></div>
                     <h4>Bandung</h4>
+                </div>
+
+                <div>
+                    <div class="profile-icon"></div>
+                    <h4>Surabaya</h4>
                 </div>
             </div>
         
@@ -84,7 +93,28 @@
 
             <section>
                 <!-- form-->
-                 <form></form>
+                 <form>
+                    <p>
+                        <label>Nama :</label>
+                        <input type="text" name="nama" placeholder="masukkan Nama">
+                    </p>
+
+                    <p>
+                        <label>Tanggal Lahir :</label>
+                        <input type="date" name="tanggal-lahir">
+                    </p>
+
+                    <p>
+                        <label>Jenis kelamin :</label>
+                        <label><input type="radio" name="jenis-kelamin" value="laki-laki"/>Laki-laki</label>
+                        <label><input type="radio" name="jenis-kelamin" value="perempuan"/>perempuan</label>
+                    </p>
+
+                    <p>
+                        <label>Pesan :</label>
+                        <textarea name="biografi" placeholder="pesan"></textarea>
+                    </p>
+                 </form>
 
                  <!-- result form-->
                   <div></div>
@@ -93,7 +123,9 @@
         </section>
     
     </main>
-
+    
+    <hr  />
+    
     <footer>
         <p>Copyright @2024</p>
     </footer>

@@ -25,9 +25,15 @@ nav>a{
     background-position: center;
 }
 
+.photo-container{
+    display: flex;
+
+}
+
 .photo{
     border: 1px solid;
     height: 500px;
+    width: 578px;
     background-image: url(../assets/valorant.jpg);
     background-position: center;
     background-size: cover;
