@@ -9,126 +9,177 @@
 <body>
     <header class="main-header">
         <!--logo-->
-        <div class="logo-icon"></div>
-
-        <!--navbar-->
-        <nav>
-            <a href="#section-home">home</a>
-            <a href="#section-our-profile">our profile</a>
-            <a href="#section-portofolio">portofolio</a>
-            <a href="#section-message-us">message us</a>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./assets/raptv.png" alt="raptv" width="70px">
+            </div>
+            <div class="menu-icon" id="menu-icon">
+            </div>
+            <ul id="menu-list" class="hidden">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#our-profile">Our Profile</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#message-us">Message Us</a></li>
+            </ul>       
         </nav>
 
     </header>
-    
-    <hr />
 
     <main>
         <!--home section-->
-        <section id="section-home">
-            
+    <section id="home">
+            <br>
+            <div class="welcome-page">
             <header>
-                <h1>Hi User, welcome to my website</h1>
+                <script src="js/script.js"></script>
             </header>
-
-            <article>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, possimus!</p>
-            <div class="photo-container">
-                <!-- photo-->
-                 <div class="photo"></div>
-                 <div class="photo"></div>
-                 <div class="photo"></div>
             </div>
-            </article>
+            
+            <!--Welcome word-->
+                <br>
+                <div class="welcome-word">
+                <h2>RapTv is a dynamic and influential media company dedicated to showcasing the best in hip-hop and rap music. As a leading platform in the urban music industry, Raptv connects artists, fans, and culture through a combination of music curation, entertainment news, artist interviews, and exclusive content. Whether highlighting emerging talents or covering legendary icons, Raptv is a one-stop destination for everything hip-hop</h2>
+                <br>
+    
+                <h2>Mission :</h2>
+                <h3>To empower and amplify voices in the hip-hop and rap community by delivering authentic content, fostering new talent, and providing fans with a comprehensive experience of the genre’s music, lifestyle, and culture.</h3>
+                <br>
+                
+                <h2>Vision :</h2>
+                <h3>To become the foremost media hub for hip-hop and rap globally, offering innovative and immersive experiences that resonate with music enthusiasts and foster connections within the hip-hop community.</h3>
+                </div>
+                <br>
+            
+        <!-- photo-->
+        <div class="box">
+                <div class="slider">
+                  <img src="./assets/travis.jpg" alt="pic1">
+                  <img src="./assets/Jcole.jpg" alt="pic2">
+                  <img src="./assets/biggie.jpg" alt="pic3">
+                </div>
+        </div>      
+        
+    </section>
+
+        <!--profile-->
+        <section id="our-profile">
+            
+                <h1>Rap Artist</h1>
+            
+            <div class="box-our-profile">
+                <div class="box-images">
+                    <div class="images-profile">
+                        <img src="./assets/artist1.jpg" alt="artist1" width="250px">
+                    </div>
+                    <div class="title">
+                        <h3>Drake</h3>
+                    </div>
+                    <div class="article">
+                        <p>Drake (real name Aubrey Graham) was born and raised in Toronto, Ontario, Canada. His birthday is Oct. 24, 1986, and his height is 6'0". He became popular playing Jimmy Brooks on Canada's CTV teen drama 'Degrassi: The Next Generation' from 2001 to 2009. His first song was 2007's "Replacement Girl" with Trey Songs, which did not land on Billboard's charts. 2009's 'So Far Gone' was his first EP, which debuted and peaked at No. 6 on the Billboard 200.</p>
+                    </div>
+                </div>
+
+                <div class="box-images">
+                    <div class="images-profile">
+                        <img src="./assets/artist2.jpg" alt="artist2" width="250px">
+                    </div>
+                    <div class="title">
+                        <h3>Kendrick Lamar</h3>
+                    </div>
+                    <div class="article">
+                        <p>Kendrick Lamar (born June 17, 1987, Compton, California, U.S.) is an American rapper who has achieved critical and commercial success with such albums as good kid, m.A.A.d city (2012) and To Pimp a Butterfly (2015).</p>
+                    </div>
+                </div>
+
+                <div class="box-images">
+                    <div class="images-profile">
+                        <img src="./assets/artist3.jpg" alt="artist3" width="250px">
+                    </div>
+                    <div class="title">
+                        <h3>Eminem</h3>
+                    </div>
+                    <div class="article">
+                        <p>Eminem, born Marshall Bruce Mathers III, 17 October 1973, Kansas City, Missouri, USA. This white rapper burst onto the US charts in 1999 with a controversial take on the horrorcore genre. Mathers endured an itinerant childhood, living with his mother in various states before eventually ending up in Detroit at the age of 12. He took up rapping in high school before dropping out in ninth grade, joining ad hoc groups Basement Productions, the New Jacks, and D12.</p>
+                    </div>
+                </div>
+
+            </div>
         
         </section>
-
-        <hr />
-
-        <!--our profile-->
-        <section id="section-our-profile">
-            
-            <header>
-                <h1>Our Headquarters</h1>
-            </header>
-            
-            <div class="profile-container">
-                <div>
-                    <div class="profile-icon"></div>
-                    <h4>Jakarta</h4>
-                </div>
-
-                <div>
-                    <div class="profile-icon"></div>
-                    <h4>Bandung</h4>
-                </div>
-
-                <div>
-                    <div class="profile-icon"></div>
-                    <h4>Surabaya</h4>
-                </div>
-            </div>
         
-        </section>
-
-        <hr />
         
         <!--portofolio-->
-        <section id="section-portofolio">
+        <section id="portofolio">
+            <h1>Portofolio</h1>
+            <div class="portofolio-content">
+                
+                <div class="portofolio-image">
+                    <img src="./assets/articlephoto.jpg" alt="rapmusic" width="500px">
+                </div>
+                
+                <div class="portofolio-article">
+                    <h1>Rap Music & Culture</h1>
+                    <p>Rap, often used interchangeably with hip-hop, is a music genre characterized by a focus on rhythm, poetry, and wordplay. Unlike traditional music forms, where melodies and harmonies take center stage, rap focuses on lyrical dexterity and intricate rhythmic speech patterns. It serves as a medium for storytelling, social commentary, and personal expression. Although the terms "hip-hop" and "rap" are often used together, they actually refer to distinct elements within a broader cultural movement. Hip-hop encompasses not only rap music but also various other artistic components, including DJing, breakdancing, and graffiti art. It materialized as a response to the social and economic challenges African-American and Latinx communities faced in New York City during the 1970s.</p>
+                </div>
             
-            <header>
-                <h1>Portofolio</h1>
-            </header>
-        
+            </div>
         </section>
 
-        <hr />
+        
         
         <!--message us-->
-        <section id="section-message-us">
+        <section id="message-us">
+            <h1>Message US</h1>
+            <div class="container-message-us">
+                
+                    
+                <form  name="message-form" onsubmit="return validateForm()">
+                       
+                    <label for="name">Nama:</label><br>
+                    <input type="text" id="name" placeholder="Nama" name="full-name"><br>
+                    <p id="error-name"></p>
+                
+
+                
+                    <label for="birth-date">Tanggal Lahir :</label><br>
+                    <input type="date" name="birth-date" id="birth-date"> <br>
+                    <p id="error-birth-date"></p>
+                
+                    <label>Jenis Kelamin :</label>
+                        <br>
+                    <input type="radio" id="male" name="gender" value="Laki-Laki">
+                    <label class="text-gender" for="male">Laki-Laki</label> 
+                        <br>
+                    <input type="radio" id="female" name="gender" value="Wanita">
+                    <label class="text-gender" for="female">Wanita</label>  
+                        <br>
+                        <p id="error-gender"></p>
+                    
+                    <label for="messages">Pesan:</label><br>
+                    <textarea name="messages" id="messages" placeholder="Masukkan Pesan"></textarea> <br>
+                    <p id="error-messages"></p>
+                    
+
+                    <input type="submit" value="Submit" id="submit">
+                </form>
             
-            <header>
-                <h1>Message Us</h1>
-            </header>
-
-            <section>
-                <!-- form-->
-                 <form>
-                    <p>
-                        <label>Nama :</label>
-                        <input type="text" name="nama" placeholder="masukkan Nama">
-                    </p>
-
-                    <p>
-                        <label>Tanggal Lahir :</label>
-                        <input type="date" name="tanggal-lahir">
-                    </p>
-
-                    <p>
-                        <label>Jenis kelamin :</label>
-                        <label><input type="radio" name="jenis-kelamin" value="laki-laki"/>Laki-laki</label>
-                        <label><input type="radio" name="jenis-kelamin" value="perempuan"/>perempuan</label>
-                    </p>
-
-                    <p>
-                        <label>Pesan :</label>
-                        <textarea name="biografi" placeholder="pesan"></textarea>
-                    </p>
-                 </form>
-
-                 <!-- result form-->
-                  <div></div>
-            </section>
-
+                <div class="output-form">
+                    <p>Nama : <span id="sender-full-name"></span></p>
+                    <p>Tanggal Lahir : <span id="sender-birth-date"></span></p>
+                    <p>Jenis Kelamin : <span id="sender-gender"></span></p>
+                    <p>Pesan : <span id="sender-messages"></span></p>
+                </div>
+            </div>
         </section>
+
     
     </main>
     
-    <hr  />
     
-    <footer>
-        <p>Copyright @2024</p>
+    <footer style="text-align: center;">
+        <p>Copyright Raptv @2024</p>
     </footer>
+
 
 </body>
 </html>

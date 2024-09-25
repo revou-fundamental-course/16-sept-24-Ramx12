@@ -1,60 +1,346 @@
-.main-header{
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    background-color: rgb(32, 30, 30);
+}
+
+
+.main-header {
+    padding: 10px 30px;
+    background-color: rgb(45, 43, 43);
+  }
+  
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-nav{
+  }
+  
+nav ul {
     display: flex;
+    text-align: center;
+  }
+  
+ul li {
+    list-style: none;
+    padding: 5px 10px;
+  }
+  
+li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: system-ui;
+    font-size: 18px;
+  }
+  
+.menu-icon {
+    display: none;
+    font-size: 25px;
+  }
+
+.welcome-page{
+    font-size: xx-large;
+    font-family: fantasy;
+    margin: 5px;
+    justify-content: center;
 }
 
-nav>a{
-    border: 1px solid;
-    padding: 9px;
+.welcome-word{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.slider img {
+    width: 100%;
+}
+.box {
+    overflow: hidden;
+    border: 1px solid rgb(50, 47, 47);
+    border-radius: 8px;
+}
+.slider {
+    width: 100%;
+    display: flex;
+    animation: slide 15s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+}
+
+#our-profile {
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 50px;
+  }
+  
+#our-profile h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px 0 20px 0;
+    font-size: 40px;
+  }
+
+  #our-profile h3{
     color: black;
-    text-decoration: none;
     font-family: sans-serif;
 }
 
-.logo-icon{
-    width: 50px;
-    height: 50px;
-    background-image: url(../assets/logo2.jpg);
-    background-size: cover;
-    border-radius: 50%;
-    background-position: center;
+#our-profile p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
 }
 
-.photo-container{
-    display: flex;
-
-}
-
-.photo{
-    border: 1px solid;
-    height: 500px;
-    width: 578px;
-    background-image: url(../assets/valorant.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.profile-icon{
-    width: 50px;
-    height: 50px;
-    background-image: url(../assets/valorant.jpg);
-    background-size: cover;
-    border-radius: 50%;
-    background-position: center;
-}
-
-.profile-container{
+.box-our-profile {
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  
+.box-images {
+    width: 300px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid;
+  }
+  
+.box-images .images-profile {
+    display: flex;
+    justify-content: center;
+  }
+  
+.images-profile img {
+    border-radius: 5px;
+  }
+  
+.title {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+.article {
+    text-align: justify;
+  }
+
+#portofolio{
+    padding: 50px 20px 50px 20px;
+    border-bottom: 2px solid;
+}
+#portofolio > h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 0 30px 0;
+    font-size: 40px;
+}
+#portofolio {
+    padding: 50px 20px 50px 20px;
+    border-bottom: 2px solid black;
+  }
+  
+#portofolio > h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 0 30px 0;
+    font-size: 40px;
+  }
+.portofolio-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.profile-container>div{
+.portofolio-image{
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
 }
+.portofolio-image img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+.portofolio-article{
+    width: 700px;
+}
+.portofolio-article a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.portofolio-article h1{
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.portofolio-article p{
+    font-size: 20px;
+    line-height: 23px;
+    text-align: justify;
+}
+#message-us {
+    padding: 50px 20px 50px 20px;
+    border-bottom: 2px solid black;
+  }
+  
+#message-us h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+.container-message-us {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px 50px;
+  }
+  
+form {
+    max-width: 100%;
+    width: 500px;
+  }
+  
+label {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+input[type="text"],
+input[type="date"] {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 5px;
+    padding: 7px 10px;
+    border-radius: 5px;
+  }
+  
+.text-gender {
+    font-size: 18px;
+  }
+  
+textarea {
+    resize: none;
+    height: 100px;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 5px;
+  }
+  
+input[type="submit"] {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+.output-form {
+    height: 250px;
+    width: 500px;
+    border: 2px solid;
+    padding: 10px;
+  }
+
+@media only screen and (min-width: 100px) and (max-width: 727px) {
+nav {
+      flex-wrap: wrap;
+    }
+  
+nav ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+nav ul.hidden {
+      display: none;
+    }
+  
+.menu-icon {
+      display: flex;
+      color: white;
+    }
+  
+label {
+      font-size: 16px;
+    }
+  
+.text-gender {
+      font-size: 16px;
+    }
+  
+.images-portofolio img {
+      width: 100%;
+    }
+  
+.article-portofolio p {
+      font-size: 16px;
+      line-height: 23px;
+    }
+    
+.banner button{
+  
+      font-size: 20px;
+    }
+  }
+  
+@media only screen and (min-width: 728px) and (max-width: 1260px) {
+.images-portofolio img {
+      width: 80%;
+    }
+  
+.article-portofolio {
+      width: 80%;
+      border: 1px solid;
+    }
+  
+.article-portofolio p {
+      line-height: 25px;
+    }
+  }
+  
